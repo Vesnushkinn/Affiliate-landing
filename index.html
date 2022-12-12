@@ -15,7 +15,8 @@
 <body class="body">
 
     <section class="body__section section body__section-main">
-        <header class="header header__container header__container-js">
+        <header class="header header__container  header__container-js"
+            style="display: grid; grid-template-columns: 1fr auto 1fr;     align-items: start;">
             <a href="index.html">
                 <div class="logo header__logo">
                     <svg class="logo__image" viewBox="0 0 193 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,41 +78,102 @@
                     </ul>
                 </nav>
             </menu>
-            <a class="login">Log In</a>
+            <a href="https://zorka-affiliates.affise.com/v2/sign/in" class="login">Log In</a>
             <menu class="header__menu-lang menu">
                 <nav class="navigation menu__navigation">
-                    <ul class="navigation__list">
-                        <!-- <li><a class="navigation__list-item" href="#about">en</a></li> -->
-                        <!-- <li><a class="navigation__list-item" href="#programm">ua</a></li>
-                        <li><a class="navigation__list-item" href="#contacts">ru</a></li> -->
+                    <ul class="navigation__list navigation__list-lang">
+                        <li class="menu__item"><a class="navigation__list-item navigation__list-item-mob">EN</a>
+                        </li>
+                        <li class="menu__item"><a class="navigation__list-item navigation__list-item-mob">UA</a></li>
+                        <li class="menu__item"><a class="navigation__list-item navigation__list-item-mob">RU</a></li>
                     </ul>
                 </nav>
             </menu>
             <img class="menu__button" src="img/burger.png">
         </header>
-        <section class="menu__humburger menu header__container-js">
+        <section class="menu__humburger menu header__container-js en">
             <nav class="navigation menu__navigation  menu__navigation-burger">
-                <img class="menu__button menu__button-burger" src="img/cross.png">
+                <img class="menu__button menu__button-burger cross" style="width: 1.929rem;" src="img/cross.png">
                 <ul class="navigation__list navigation__list-burger">
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#about">about</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whoweare">Who We Are?</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#programm">program</a></li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#contacts">contacts</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#joinus">Join us!</a></li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whyus">Why Us?</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners">Our
+                            Partners</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#contactus">Contact Us</a>
                     </li>
                 </ul>
             </nav>
+            <button onclick="window.location.href='https://zorka-affiliates.affise.com/v2/sign/in'"
+                class="button button__body button__body-mob">Log in / Register</button>
+            <a class="create" href="https://zorka-affiliates.affise.com/v2/sign/up">Create account</a>
         </section>
-        <div class="section__tittle section__tittle-main">
+        <section class="menu__humburger menu header__container-js ru ">
+            <nav class="navigation menu__navigation  menu__navigation-burger">
+                <img class="menu__button menu__button-burger cross" style="width: 1.929rem;" src="img/cross.png">
+                <ul class="navigation__list navigation__list-burger">
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whoweare">Кто мы?</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#joinus">Почему мы?</a></li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whyus">Присоединяйтесь!</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners">Наши
+                            партнеры</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#contactus">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button onclick="window.location.href='https://zorka-affiliates.affise.com/v2/sign/in'"
+                class="button button__body button__body-mob">Войти / Зарегистрироваться</button>
+            <a class="create" href="https://zorka-affiliates.affise.com/v2/sign/up">Create account</a>
+        </section>
+        <section class="menu__humburger menu header__container-js ua">
+            <nav class="navigation menu__navigation  menu__navigation-burger">
+                <img class="menu__button menu__button-burger cross" style="width: 1.929rem;" src="img/cross.png">
+                <ul class="navigation__list navigation__list-burger">
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whoweare">Хто ми?</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#joinus">Приэднатися!</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whyus">Чому ми?</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners">Наші
+                            партнери</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#contactus">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <button onclick="window.location.href='https://zorka-affiliates.affise.com/v2/sign/in'"
+                class="button button__body button__body-mob">Увійти / Зареэстрватися</button>
+            <a class="create" href="https://zorka-affiliates.affise.com/v2/sign/up">Create account</a>
+        </section>
+        <div class="section__tittle section__tittle-main en">
             <p class="tittle subtittle__main">CPA Network</p>
             <h1 class="tittle tittle-1">Zorka.Affiliates</h1>
             <p class="tittle subtittle">The place where profit lives!</p>
         </div>
+        <div class="section__tittle section__tittle-main  ua">
+            <p class="tittle subtittle__main">CPA - мережа</p>
+            <h1 class="tittle tittle-1">Zorka.Affiliates</h1>
+            <p class="tittle subtittle">Місце, де мешкає профіт!</p>
+        </div>
+        <div class="section__tittle section__tittle-main ru">
+            <p class="tittle subtittle__main">CPA - сеть</p>
+            <h1 class="tittle tittle-1">Zorka.Affiliates</h1>
+            <p class="tittle subtittle">Место, где живет профит!</p>
+        </div>
 
-        <button class="button button__main">Join Us</button>
+        <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+            class="button button__main">Join Us</button>
         <img src="img/coins.png" alt="coins" class="coins">
         <img src="img/coinsmob.png" alt="coins" class="coinsmob">
     </section>
-    <section id="about" class="body__section section section__content section__text-margin">
+    <section id="whoweare" class="body__section section section__content section__text-margin">
         <div class="section__container">
             <div class="container__item container__item-text">
                 <div class="section__tittle section__tittle-main section__tittle-left">
@@ -135,7 +197,7 @@
         </div>
     </section>
     <!-- <button class="button section__button button__none">играть в aviator</button> -->
-    <section id="programm" class="body__section section section__content section__content-zews">
+    <section id="joinus" class="body__section section section__content section__content-zews">
         <div class="section__container">
             <div class="container__item container__item-phones">
                 <img class="photo__zews" src="img/photo2.png">
@@ -152,11 +214,12 @@
                 <!-- <button class="button">
                     <p class=" button button__text">get course</p>
                 </button> -->
-                <button class="button button__body">Log in / Register</button>
+                <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+                    class="button button__body">Log in / Register</button>
             </div>
         </div>
     </section>
-    <section class="body__section section section__content ">
+    <section id="whyus" class="body__section section section__content ">
         <div class="section__tittle section__tittle-main section__tittle-left">
             <h2 class="tittle tittle-2 tittle-2-margin">Why Us?
             </h2>
@@ -196,7 +259,7 @@
             </li>
         </ul>
     </section>
-    <section class="body__section section section__content ">
+    <section id="ourpartners" class="body__section section section__content ">
         <div class="section__tittle section__tittle-main section__tittle-left">
             <h2 class="tittle tittle-2 tittle-2-margin tittle-2-margin-m">Our Partners
             </h2>
@@ -209,7 +272,8 @@
             <img class="partner__image" src="img/bwin.png">
             <img class="partner__image" src="img/favbet.png">
         </div>
-        <button class="button button__main button__main-full">Become a Partner</button>
+        <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+            class="button button__main button__main-full">Become a Partner</button>
     </section>
     <!-- <section id="about" class="body__section section section__content">
         <div class="section__container section__container-meet">
@@ -264,7 +328,7 @@
         </div>
     </section> -->
 
-    <section class="body__section section section__content ">
+    <section id="contactus" class="body__section section section__content ">
         <div class="section__tittle section__tittle-main section__tittle-left">
             <h2 class="tittle tittle-2 tittle-2-margin">Contact Us
             </h2>
@@ -282,7 +346,8 @@
                 <img class="contant__image" src="img/afflogo.png">
                 <div class="contact__text">
                     <h4 class="contact__tittle">Zorka.Support</h4>
-                    <p class="contact__social"><span style="color: #B28DFF;">Email:</span> contacts@zorka-affiliates.com</p>
+                    <p class="contact__social"><span style="color: #B28DFF;">Email:</span> contacts@zorka-affiliates.com
+                    </p>
                     <p class="contact__social"><span style="color: #B28DFF;">Telegram:</span> @zorkasupport</p>
                 </div>
             </div>
@@ -293,7 +358,8 @@
             <nav class="navigation menu__navigation">
                 <ul class="navigation__list navigation__list-footer">
                     <li><a class="navigation__list-item navigation__list-item-footer" href="#">Cookies</a></li>
-                    <li><a class="navigation__list-item navigation__list-item-footer" href="#">Policy Terms & Conditions</a></li>
+                    <li><a class="navigation__list-item navigation__list-item-footer" href="#">Policy Terms &
+                            Conditions</a></li>
                     <li><a class="navigation__list-item navigation__list-item-footer" href="#">Privacy Policy</a></li>
                 </ul>
             </nav>
@@ -303,22 +369,197 @@
 
     <script>
         const burgerButton = document.querySelectorAll(".menu__button");
-        const birgerContainer = document.querySelectorAll(".header__container-js");
+        let birgerContainer;
         const listItem = document.querySelectorAll(".navigation__list-item-white");
+        // const langActive = document.querySelector(".navigation__list-item-first");
+        const langClosed = document.querySelectorAll(".menu__item");
+        const langCont = document.querySelector(".header__menu-lang");
+        const en = document.querySelectorAll(".en");
+        const ua = document.querySelectorAll(".ua");
+        const ru = document.querySelectorAll(".ru");
+        let activeLanguage = 'en';
 
 
-        function burger(buttons, items) {
-            let activeIndex = 0;
-            buttons[activeIndex].classList.add("active");
-            items[activeIndex].classList.add("active");
+        function languages(itemClose, container, ru, en, ua, button, birger,) {
+            // container.style.display = "none";
+            let containerIndex = 0;
+            ua.forEach((item, items) => {
+                item.classList.add("none")
+            });
+            ru.forEach((item, items) => {
+                item.classList.add("none")
+            });
+            birger = document.querySelectorAll(".header__container-js:not(.none)");
+            burger(button, birger, activeIndex);
+            itemClose[activeIndex].classList.add("navigation__list-item-first");
+            itemClose.forEach((item, itemIndex) => {
+                item.addEventListener("click", () => {
+                    if (containerIndex === 0) {
+
+                        container.classList.add("open");
+                        itemClose.forEach((item, itemIndex) => {
+                            item.style.display = "block"
+                        });
+                        containerIndex = 1;
+                        
+                    } else if ((containerIndex === 1) && (itemIndex === activeIndex)) {
+                        container.classList.remove("open");
+                        itemClose.forEach((itemLang, items) => {
+                            itemLang.style.display = "none";
+                        });
+                        itemClose[activeIndex].style.display = "block";
+                        containerIndex = 0;
+                        birger = document.querySelectorAll(".header__container-js:not(.none)");
+                        burger(button, birger, activeIndex);
+                    } else if ((containerIndex === 1) && (itemIndex !== activeIndex) && (itemIndex === 0)) {
+                        console.log("en")
+                        itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        activeIndex = 0;
+                        itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        container.classList.remove("open");
+                        itemClose.forEach((itemLang, items) => {
+                            itemLang.style.display = "none";
+                        });
+                        itemClose[activeIndex].style.display = "block";
+                        containerIndex = 0;
+                        ua.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        ru.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        en.forEach((item, items) => {
+                            item.classList.remove("none")
+                        });
+                        birger = document.querySelectorAll(".header__container-js:not(.none)");
+                        burger(button, birger, activeIndex);
+                    }
+                    else if ((containerIndex === 1) && (itemIndex !== activeIndex) && (itemIndex === 1)) {
+                        console.log("ua");
+                        itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        activeIndex = 1;
+                        itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        container.classList.remove("open");
+                        itemClose.forEach((itemLang, items) => {
+                            itemLang.style.display = "none";
+                        });
+                        itemClose[activeIndex].style.display = "block";
+                        containerIndex = 0;
+                        ua.forEach((item, items) => {
+                            item.classList.remove("none")
+                        });
+                        ru.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        en.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        birger = document.querySelectorAll(".header__container-js:not(.none)");
+                        burger(button, birger, activeIndex);
+
+                    } else if ((containerIndex === 1) && (itemIndex !== activeIndex) && (itemIndex === 2)) {
+                        console.log("ru")
+                        itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        activeIndex = 2;
+                        itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        container.classList.remove("open");
+                        itemClose.forEach((itemLang, items) => {
+                            itemLang.style.display = "none";
+                        });
+                        itemClose[activeIndex].style.display = "block";
+                        containerIndex = 0;
+                        ua.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        ru.forEach((item, items) => {
+                            item.classList.remove("none")
+                        });
+                        en.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        birger = document.querySelectorAll(".header__container-js:not(.none)");
+                        burger(button, birger, activeIndex);
+                    }
+
+                })
+            });
+        };
+
+
+        function burger(buttons, items, active) {
+            let activeIndex = active;
+            let buttonIndex = 0
+            buttons[buttonIndex].classList.add("active");
+            items[buttonIndex].classList.add("active");
             buttons.forEach((button, buttonIndex) =>
                 button.addEventListener("click", () => {
-                    buttons[activeIndex].classList.remove("active");
-                    items[activeIndex].classList.remove("active");
-                    if (activeIndex === 0) { activeIndex = 1; document.body.style.overflow = "hidden" } else { activeIndex = 0; document.body.style.overflow = "visible" };
-                    buttons[activeIndex].classList.add("active");
-                    items[activeIndex].classList.add("active");
-                    menu(activeIndex, listItem, button);
+                    if (buttonIndex === 0) {
+                        buttons[buttonIndex].classList.remove("active");
+                        items[0].classList.remove("active");
+                        items[1].classList.add("active");
+                        if (activeIndex === 0) {
+                            buttons[1].classList.add("active");
+                            buttonIndex = 1;
+                        } else if (activeIndex === 1) {
+                            buttons[3].classList.add("active");
+                            buttonIndex = 3;
+                        } else if (activeIndex === 2) {
+                            buttons[2].classList.add("active");
+                            buttonIndex = 2;
+                        }
+                        document.body.style.overflow = "hidden"
+
+                    } else if (buttonIndex === 1) {
+                        items[1].classList.remove("active");
+                        buttons[1].classList.remove("active");
+                        if (activeIndex === 0) {
+                            buttons[1].classList.remove("active");
+                        } else if (activeIndex === 1) {
+                            buttons[3].classList.remove("active");
+                        } else if (activeIndex === 2) {
+                            buttons[2].classList.remove("active");
+                        }
+                        buttonIndex = 0;
+                        buttons[0].classList.add("active");
+                        items[0].classList.add("active");
+                        document.body.style.overflow = "visible"
+                    }
+                    else if (buttonIndex === 2) {
+                        items[1].classList.remove("active");
+                        buttons[2].classList.remove("active");
+                        if (activeIndex === 0) {
+                            buttons[1].classList.remove("active");
+                        } else if (activeIndex === 1) {
+                            buttons[3].classList.remove("active");
+                        } else if (activeIndex === 2) {
+                            buttons[2].classList.remove("active");
+                        }
+                        buttonIndex = 0;
+                        buttons[0].classList.add("active");
+                        items[0].classList.add("active");
+                        document.body.style.overflow = "visible"
+                    }
+                    else if (buttonIndex === 3) {
+                        items[1].classList.remove("active");
+                        buttons[3].classList.remove("active");
+                        if (activeIndex === 0) {
+                            buttons[1].classList.remove("active");
+                        } else if (activeIndex === 1) {
+                            buttons[3].classList.remove("active");
+                        } else if (activeIndex === 2) {
+                            buttons[2].classList.remove("active");
+                        }
+                        buttonIndex = 0;
+                        buttons[0].classList.add("active");
+                        items[0].classList.add("active");
+                        document.body.style.overflow = "visible"
+                    };
+                    console.log(buttonIndex)
+                    buttonIndex = 0;
+                    buttons[0].classList.add("active");
+                    items[0].classList.add("active");
+                    
+                    // menu(activeIndex, listItem, button);
                     function menu(Index, links) {
                         links.forEach((link, buttonIndex) =>
                             link.addEventListener("click", () => {
@@ -331,9 +572,10 @@
                     };
                 })
             );
+            
         };
 
-        burger(burgerButton, birgerContainer);
+        languages(langClosed, langCont, ru, en, ua, burgerButton, birgerContainer);
 
     </script>
 </body>

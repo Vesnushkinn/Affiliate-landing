@@ -988,6 +988,10 @@ input:checked + * + input + * ~ input:after,{
     display: none;
 }
 
+.none {
+    display: none;
+}
+
 @media screen and (max-width: 1080px) {
     html {
         font-size: 11px;
@@ -1032,8 +1036,21 @@ input:checked + * + input + * ~ input:after,{
     }
 
     .header__menu-lang {
-        display: flex;
+        display: grid;
+        margin: 0;
+        padding: 0;
     }
+
+    .header__menu-lang.open {
+        background-color: white;
+        padding: 0px 30px 23px 30px;
+    }
+
+    .navigation__list-lang {
+        grid-template-columns: auto;
+        row-gap: 0.286rem;
+    }
+
 
     .menu__button {
         width: 5vw;
@@ -1046,8 +1063,13 @@ input:checked + * + input + * ~ input:after,{
         padding-top: 0;
         width: 2.4286rem;
         height: auto;
+        justify-self: end;
     }
+  
 
+    .ccross {
+        width: 1.929rem;
+    }
 
     .menu__button-burger {
         justify-self: right;
@@ -1081,23 +1103,61 @@ input:checked + * + input + * ~ input:after,{
         display: flex;
     }
 
+    .none {
+        display: none;
+    }
+
+
     .menu__navigation-burger {
         display: grid;
-        height: fit-content;
-        width: 100%;
+        padding: 0.7143rem;
+        row-gap: 0.714rem;
+        padding-bottom: 0px;
+        width: -webkit-fill-available;
     }
 
     .navigation__list-item {
-        font-size: 12vw;
+        font-size: 2rem;
+        line-height: 2.429rem;
+        letter-spacing: -0.01em;
+        text-transform: none;
+    }
+
+    .navigation__list-item-mob {
+        font-size: 1.143rem;
+        line-height: 1.357rem;
+        letter-spacing: 0.04em;
+    }
+
+    .menu__item {
+        /* grid-row-start: 1; */
+        display: none;
+    }
+
+    .navigation__list-item-first {
+        grid-row-start: 1;
+        display: block;
+        position: relative;
+    }
+
+    .navigation__list-item-first::after {
+        content: url(img/lang.png);
+        position: absolute;
+        bottom: 11%;
+        right: -40%;
     }
 
     .menu__humburger {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url(img/BG\ gradient.png);
+        background-color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
         z-index: 99999;
         top: 0;
         height: 100vh;
         width: 100%;
+        padding: 0;
     }
 
     .tittle-2-main {
@@ -1349,7 +1409,7 @@ input:checked + * + input + * ~ input:after,{
 
     .tittle {
         text-align: left;
-        margin-bottom: 0;
+        margin-bottom: 2.5rem;
         margin-left: 0px;
         margin-right: 0px;
 
@@ -1480,7 +1540,7 @@ input:checked + * + input + * ~ input:after,{
         justify-self: center;
         align-self: center;
         width: fit-content;
-        margin-top: 50%;
+        margin-top: 0;
         row-gap: 3vw;
         justify-items: center;
     }
@@ -1541,6 +1601,27 @@ input:checked + * + input + * ~ input:after,{
         margin-bottom: 1rem;
     }
 
+    .button__body-mob {
+        margin-top: 2.571rem;
+        margin-left: 0.7143rem;
+        margin-right: 0.7143rem;
+        width: -webkit-fill-available;
+        margin-bottom: 1.429rem;
+    }
+
+    .create {
+        font-family: 'Casper';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 0.929rem;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin: 0;
+        padding: 0 0 0.357rem 0;
+        border-bottom: 1px solid #000000;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -1582,13 +1663,20 @@ input:checked + * + input + * ~ input:after,{
     }
 
     .navigation__list-burger {
-        row-gap: 3vw;
-        font-size: 5.5vw;
+        row-gap: 1.286rem;
     }
 
     .button {
         width: 100%;
         /* padding: 0px; */
+    }
+
+    .button__body-mob {
+        margin-top: 2.571rem;
+        margin-left: 0.7143rem;
+        margin-right: 0.7143rem;
+        width: -webkit-fill-available;
+        margin-bottom: 1.429rem;
     }
 
     /* 
@@ -1630,4 +1718,11 @@ input:checked + * + input + * ~ input:after,{
     .section__text-m {
         margin-bottom: 0;
     }
+}
+
+@media only screen and (max-width: 385px) {
+    .menu__humburger {
+        background-size: contain;
+    }
+
 }
