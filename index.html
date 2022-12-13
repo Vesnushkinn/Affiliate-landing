@@ -15,10 +15,10 @@
 <body class="body">
 
     <section class="body__section section body__section-main">
-        <header class="header header__container  header__container-js"
-            style="display: grid; grid-template-columns: 1fr auto 1fr;     align-items: start;">
-            <a href="index.html">
-                <div class="logo header__logo">
+        <header class="header header__container"
+            style="display: grid; grid-template-columns: 1fr auto 1fr;">
+
+            <div class="logo header__logo"><a href="index.html">
                     <svg class="logo__image" viewBox="0 0 193 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M64.7161 51.2928H60.6475L66.1767 36.6874H70.3496L75.8788 51.2928H71.8102L70.8712 48.6847H65.655L64.7161 51.2928ZM66.5939 45.9723H69.9323L68.2631 41.069L66.5939 45.9723Z"
@@ -66,15 +66,15 @@
                             d="M9.66171 25.8469C9.66171 34.7151 16.8483 41.9016 25.7165 41.9016C34.5847 41.9016 41.7712 34.7151 41.7712 25.8469C41.7712 16.9786 34.5847 9.79209 25.7165 9.79209C16.8483 9.78758 9.66171 16.9786 9.66171 25.8469ZM6.36149 24.0705C6.36149 12.4025 15.8203 2.94368 27.4883 2.94368C39.1563 2.94368 48.6152 12.4025 48.6152 24.0705C48.6152 35.7385 39.1563 45.1973 27.4883 45.1973C15.8203 45.1973 6.36149 35.7385 6.36149 24.0705ZM0 25.8469C0 40.0486 11.5147 51.5633 25.7165 51.5633C39.9183 51.5633 51.433 40.0486 51.433 25.8469C51.433 11.6451 39.9183 0.130371 25.7165 0.130371C11.5147 0.130371 0 11.6406 0 25.8469Z"
                             fill="black" />
                     </svg>
+                </a>
+            </div>
 
-                </div>
-            </a>
             <menu class="header__menu menu">
                 <nav class="navigation menu__navigation">
                     <ul class="navigation__list">
-                        <li><a class="navigation__list-item" href="#about">en</a></li>
-                        <li><a class="navigation__list-item" href="#programm">ua</a></li>
-                        <li><a class="navigation__list-item" href="#contacts">ru</a></li>
+                        <li class="navigation__list-item-button"><a class="navigation__list-item">en</a></li>
+                        <li class="navigation__list-item-button"><a class="navigation__list-item">ua</a></li>
+                        <li class="navigation__list-item-button"><a class="navigation__list-item">ru</a></li>
                     </ul>
                 </nav>
             </menu>
@@ -103,7 +103,7 @@
                     <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners">Our
                             Partners</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#contactus">Contact Us</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#contacts">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -115,15 +115,17 @@
             <nav class="navigation menu__navigation  menu__navigation-burger">
                 <img class="menu__button menu__button-burger cross" style="width: 1.929rem;" src="img/cross.png">
                 <ul class="navigation__list navigation__list-burger">
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#whoweare">Кто мы?</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whoweare_ru">Кто мы?</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#joinus">Почему мы?</a></li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#whyus">Присоединяйтесь!</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#joinus_ru">Почему мы?</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners">Наши
+                    <li><a class="navigation__list-item navigation__list-item-white"
+                            href="#whyus_ru">Присоединяйтесь!</a>
+                    </li>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners_ru">Наши
                             партнеры</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#contactus">Контакты</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#contacts_ru">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -135,16 +137,16 @@
             <nav class="navigation menu__navigation  menu__navigation-burger">
                 <img class="menu__button menu__button-burger cross" style="width: 1.929rem;" src="img/cross.png">
                 <ul class="navigation__list navigation__list-burger">
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#whoweare">Хто ми?</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whoweare_ua">Хто ми?</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#joinus">Приэднатися!</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#joinus_ua">Приэднатися!</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#whyus">Чому ми?</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#whyus_ua">Чому ми?</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners">Наші
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#ourpartners_ua">Нашi
                             партнери</a>
                     </li>
-                    <li><a class="navigation__list-item navigation__list-item-white" href="#contactus">Контакти</a>
+                    <li><a class="navigation__list-item navigation__list-item-white" href="#contacts_ua">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -169,13 +171,17 @@
         </div>
 
         <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
-            class="button button__main">Join Us</button>
+            class="button button__main en">Join Us</button>
+        <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+            class="button button__main ru">Присоединиться</button>
+        <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+            class="button button__main ua">Приєднуватися</button>
         <img src="img/coins.png" alt="coins" class="coins">
         <img src="img/coinsmob.png" alt="coins" class="coinsmob">
     </section>
-    <section id="whoweare" class="body__section section section__content section__text-margin">
+    <section class="body__section section section__content section__text-margin">
         <div class="section__container">
-            <div class="container__item container__item-text">
+            <div id="whoweare" class="container__item container__item-text en">
                 <div class="section__tittle section__tittle-main section__tittle-left">
                     <h2 class="tittle tittle-2">Who We Are?</h2>
                 </div>
@@ -184,10 +190,24 @@
                     consistently raising the quality bar with high payouts for media buyers, as well as an outstanding
                     traffic quality for advertisers.
                 </p>
-                <!-- <button class="button">
-                    <p class=" button button__text">get course</p>
-                </button> -->
-
+            </div>
+            <div id="whoweare_ru" class="container__item container__item-text ru">
+                <div class="section__tittle section__tittle-main section__tittle-left">
+                    <h2 class="tittle tittle-2">Кто мы?</h2>
+                </div>
+                <p class="text section__text section__text-m">Zorka. Affiliates - это CPA-сеть с преимуществами и давней
+                    историей. Бренд Zorka с 2014 года стабильно держит планку качества с высокими выплатами для
+                    веб-мастеров, а также отличному качеству трафика для рекламодателей.
+                </p>
+            </div>
+            <div id="whoweare_ua" class="container__item container__item-text ua">
+                <div class="section__tittle section__tittle-main section__tittle-left">
+                    <h2 class="tittle tittle-2">Хто ми?</h2>
+                </div>
+                <p class="text section__text section__text-m">Zorka.Affiliates - це CPA-мережа з перевагами та давньою
+                    iсторiєю. Бренд Zorka з 2014 року стабiльно тримає планку якостi з високими виплатами для
+                    веб-майстрiв, а також чудову якiсть трафiку для рекламодавцiв.
+                </p>
             </div>
             <div class="container__item container__item-phones">
                 <img class="photo__right" src="img/photo1.png">
@@ -196,8 +216,7 @@
 
         </div>
     </section>
-    <!-- <button class="button section__button button__none">играть в aviator</button> -->
-    <section id="joinus" class="body__section section section__content section__content-zews">
+    <section id="joinus" class="body__section section section__content section__content-zews en">
         <div class="section__container">
             <div class="container__item container__item-phones">
                 <img class="photo__zews" src="img/photo2.png">
@@ -211,15 +230,48 @@
                     reliable solutions, as well as a personal approach
                     and traditionally high payouts!
                 </p>
-                <!-- <button class="button">
-                    <p class=" button button__text">get course</p>
-                </button> -->
                 <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
                     class="button button__body">Log in / Register</button>
             </div>
         </div>
     </section>
-    <section id="whyus" class="body__section section section__content ">
+    <section id="joinus_ru" class="body__section section section__content section__content-zews ru">
+        <div class="section__container">
+            <div class="container__item container__item-phones">
+                <img class="photo__zews" src="img/photo2.png">
+            </div>
+            <div class="container__item container__item-text container__item-text-2">
+                <div class="section__tittle section__tittle-main section__tittle-left">
+                    <h2 class="tittle tittle-2 tittle-2-s">Присоединяйтесь!</h2>
+                </div>
+                <p class="text section__text section__text-m section__text-m-width">Сегодня в вашем распоряжении
+                    гемблинг, беттинг-офферы, надежные решения, а также персональный подход и традиционно высокий
+                    уровень экспертизы!
+                </p>
+                <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+                    class="button button__body">Войти / зарегистрироваться</button>
+            </div>
+        </div>
+    </section>
+    <section id="joinus_ua" class="body__section section section__content section__content-zews ua">
+        <div class="section__container">
+            <div class="container__item container__item-phones">
+                <img class="photo__zews" src="img/photo2.png">
+            </div>
+            <div class="container__item container__item-text container__item-text-2">
+                <div class="section__tittle section__tittle-main section__tittle-left">
+                    <h2 class="tittle tittle-2 tittle-2-s">Приэднатися!</h2>
+                </div>
+                <p class="text section__text section__text-m section__text-m-width">Сьогоднi у вашому розпорядженнi
+                    IGaming, Betting-оффери, надiйнi рiшення, а також персональний пiдхiд та традицiйно високий рiвень
+                    експертизи!
+                </p>
+                <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+                    class="button button__body">Увiйти / Зареэстрватися</button>
+            </div>
+        </div>
+    </section>
+    <section id="whyus" class="body__section section section__content en">
         <div class="section__tittle section__tittle-main section__tittle-left">
             <h2 class="tittle tittle-2 tittle-2-margin">Why Us?
             </h2>
@@ -259,9 +311,91 @@
             </li>
         </ul>
     </section>
-    <section id="ourpartners" class="body__section section section__content ">
+    <section id="whyus_ua" class="body__section section section__content ua">
         <div class="section__tittle section__tittle-main section__tittle-left">
+            <h2 class="tittle tittle-2 tittle-2-margin">Чому ми? Все просто!
+            </h2>
+        </div>
+        <ul class="important ">
+            <li class="important__item important__item-bordertop">
+                Оффери Tier 1-3 пiд ASO, ASA, PPC, UAC & iOS FB </li>
+            <li class="important__item important__item-bordertop">
+                Малий холдинг часу
+                (0-7 днiв)
+            </li>
+            <li class="important__item important__item-bordertop">
+                Персональнi рiшення для ASA та PPC у Tier-1
+            </li>
+            <li class="important__item">
+                API, S2S
+                iнтеграцiя постбеку
+            </li>
+            <li class="important__item">
+                CPA & RevShare - моделi
+            </li>
+            <li class="important__item">
+                Власнi Android-прили
+                пiд будь-якi вертикалi
+            </li>
+            <li class="important__item">
+                Гарантована покупка UAC, FB,
+                In-App, Tik-Tok трафiку
+            </li>
+            <li class="important__item">
+                Спортивнi бренди для зливу ASO-трафiку
+            </li>
+            <li class="important__item">
+                24/7 Саппорт
+            </li>
+        </ul>
+    </section>
+    <section id="whyus_ru" class="body__section section section__content ru">
+        <div class="section__tittle section__tittle-main section__tittle-left">
+            <h2 class="tittle tittle-2 tittle-2-margin">Почему мы? Все просто!
+            </h2>
+        </div>
+        <ul class="important ">
+            <li class="important__item important__item-bordertop">
+                Офферы в Tier 1-3 под ASO, ASA, PPS, UAC & iOS FB</li>
+            <li class="important__item important__item-bordertop">
+                Маленький холд
+                (0-7 дней)
+            </li>
+            <li class="important__item important__item-bordertop">
+                Персональные решения для ASA и PPC в Tier-1
+            </li>
+            <li class="important__item">
+                API, S2S интеграция постбэка
+            </li>
+            <li class="important__item">
+                CPA & RevShare -
+                платежные модели
+            </li>
+            <li class="important__item">
+                Собственные Android-прилы под любые вертикали
+            </li>
+            <li class="important__item">
+                Гарантированная покупка UAC, FB, In-App, Tik-Tok трафика
+            </li>
+            <li class="important__item">
+                Спортивные бренды для слива ASO-трафика
+            </li>
+            <li class="important__item">
+                24/7 Саппорт
+            </li>
+        </ul>
+    </section>
+    <section class="body__section section section__content">
+        <div id="ourpartners" class="section__tittle section__tittle-main section__tittle-left en">
             <h2 class="tittle tittle-2 tittle-2-margin tittle-2-margin-m">Our Partners
+            </h2>
+        </div>
+        <div id="ourpartners_ua" class="section__tittle section__tittle-main section__tittle-left ua">
+            <h2 class="tittle tittle-2 tittle-2-margin tittle-2-margin-m">Нашi партнери
+            </h2>
+        </div>
+        <div id="ourpartners_ru" class="section__tittle section__tittle-main section__tittle-left ru">
+            <h2 class="tittle tittle-2 tittle-2-margin tittle-2-margin-m">Наши партнеры
             </h2>
         </div>
         <div class="partners ">
@@ -273,7 +407,13 @@
             <img class="partner__image" src="img/favbet.png">
         </div>
         <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
-            class="button button__main button__main-full">Become a Partner</button>
+            class="button button__main button__main-full en">Become a Partner</button>
+
+        <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+            class="button button__main button__main-full ru">Стать партнером</button>
+
+        <button onclick="window.location.href = 'https://zorka-affiliates.affise.com/v2/sign/in'"
+            class="button button__main button__main-full ua">Стати партнером</button>
     </section>
     <!-- <section id="about" class="body__section section section__content">
         <div class="section__container section__container-meet">
@@ -328,9 +468,13 @@
         </div>
     </section> -->
 
-    <section id="contactus" class="body__section section section__content ">
+    <section class="body__section section section__content ">
         <div class="section__tittle section__tittle-main section__tittle-left">
-            <h2 class="tittle tittle-2 tittle-2-margin">Contact Us
+            <h2 id="contacts" class="tittle tittle-2 tittle-2-margin en">Contact Us
+            </h2>
+            <h2 id="contacts_ru" class="tittle tittle-2 tittle-2-margin ru">Контакты
+            </h2>
+            <h2 id="contacts_ua" class="tittle tittle-2 tittle-2-margin ua">Контакти
             </h2>
         </div>
         <div class="contacts">
@@ -368,20 +512,99 @@
     </footer>
 
     <script>
-        const burgerButton = document.querySelectorAll(".menu__button");
-        let birgerContainer;
+        const burgerButton = document.querySelector(".menu__button:not(.cross)");
+        const closeBurgerButton = document.querySelectorAll(".menu__button.cross");
         const listItem = document.querySelectorAll(".navigation__list-item-white");
-        // const langActive = document.querySelector(".navigation__list-item-first");
         const langClosed = document.querySelectorAll(".menu__item");
         const langCont = document.querySelector(".header__menu-lang");
         const en = document.querySelectorAll(".en");
         const ua = document.querySelectorAll(".ua");
         const ru = document.querySelectorAll(".ru");
+        const langButton = document.querySelectorAll(".navigation__list-item-button");
+        const burgerContainer = document.querySelectorAll(".header__container-js");
         let activeLanguage = 'en';
 
+        let activeIndex = 0;
+        languagesDesk(langButton, activeIndex, ru, en, ua, langClosed)
 
-        function languages(itemClose, container, ru, en, ua, button, birger,) {
-            // container.style.display = "none";
+        function languagesDesk(langButDes, butIndex, ru, en, ua, itemClose) {
+            langButDes[butIndex].classList.add("activeLang");
+            itemClose[butIndex].classList.add("navigation__list-item-first");
+            ua.forEach((item, items) => {
+                item.classList.add("none")
+            });
+            ru.forEach((item, items) => {
+                item.classList.add("none")
+            });
+            langButDes.forEach((item, itemIndex) => {
+                item.addEventListener("click", () => {
+                    itemClose[butIndex].classList.remove("navigation__list-item-first");
+                    langButDes[butIndex].classList.remove("activeLang");
+                    item.classList.add("activeLang");
+                    if ((itemIndex !== activeIndex) && (itemIndex === 0)) {
+                        console.log("en")
+                        itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        langButDes[activeIndex].classList.remove("activeLang");
+                        activeIndex = 0;
+                        itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        langButDes[activeIndex].classList.add("activeLang");
+                        ua.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        ru.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        en.forEach((item, items) => {
+                            item.classList.remove("none")
+                        });
+                        activeLanguage = 'en';
+
+                    }
+                    else if ((itemIndex !== activeIndex) && (itemIndex === 1)) {
+                        console.log("ua");
+                        itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        langButDes[activeIndex].classList.remove("activeLang");
+                        activeIndex = 1;
+                        itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        langButDes[activeIndex].classList.add("activeLang");
+                        ua.forEach((item, items) => {
+                            item.classList.remove("none")
+                        });
+                        ru.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        en.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        activeLanguage = 'ua';
+
+                    } else if ((itemIndex !== activeIndex) && (itemIndex === 2)) {
+                        console.log("ru")
+                        itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        langButDes[activeIndex].classList.remove("activeLang");
+                        activeIndex = 2;
+                        itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        langButDes[activeIndex].classList.add("activeLang");
+                        ua.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        ru.forEach((item, items) => {
+                            item.classList.remove("none")
+                        });
+                        en.forEach((item, items) => {
+                            item.classList.add("none")
+                        });
+                        activeLanguage = 'ru';
+                    }
+                    butIndex = itemIndex;
+                    return itemIndex;
+                    console.log(butIndex)
+                })
+            });
+            return butIndex;
+            console.log(butIndex)
+        };
+        function languages(itemClose, container, ru, en, ua, langButDes) {
             let containerIndex = 0;
             ua.forEach((item, items) => {
                 item.classList.add("none")
@@ -389,8 +612,6 @@
             ru.forEach((item, items) => {
                 item.classList.add("none")
             });
-            birger = document.querySelectorAll(".header__container-js:not(.none)");
-            burger(button, birger, activeIndex);
             itemClose[activeIndex].classList.add("navigation__list-item-first");
             itemClose.forEach((item, itemIndex) => {
                 item.addEventListener("click", () => {
@@ -401,7 +622,7 @@
                             item.style.display = "block"
                         });
                         containerIndex = 1;
-                        
+
                     } else if ((containerIndex === 1) && (itemIndex === activeIndex)) {
                         container.classList.remove("open");
                         itemClose.forEach((itemLang, items) => {
@@ -409,13 +630,13 @@
                         });
                         itemClose[activeIndex].style.display = "block";
                         containerIndex = 0;
-                        birger = document.querySelectorAll(".header__container-js:not(.none)");
-                        burger(button, birger, activeIndex);
                     } else if ((containerIndex === 1) && (itemIndex !== activeIndex) && (itemIndex === 0)) {
                         console.log("en")
                         itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        langButDes[activeIndex].classList.remove("activeLang");
                         activeIndex = 0;
                         itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        langButDes[activeIndex].classList.add("activeLang");
                         container.classList.remove("open");
                         itemClose.forEach((itemLang, items) => {
                             itemLang.style.display = "none";
@@ -431,14 +652,15 @@
                         en.forEach((item, items) => {
                             item.classList.remove("none")
                         });
-                        birger = document.querySelectorAll(".header__container-js:not(.none)");
-                        burger(button, birger, activeIndex);
+                        activeLanguage = 'en';
                     }
                     else if ((containerIndex === 1) && (itemIndex !== activeIndex) && (itemIndex === 1)) {
                         console.log("ua");
                         itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        langButDes[activeIndex].classList.remove("activeLang");
                         activeIndex = 1;
                         itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        langButDes[activeIndex].classList.add("activeLang");
                         container.classList.remove("open");
                         itemClose.forEach((itemLang, items) => {
                             itemLang.style.display = "none";
@@ -454,14 +676,15 @@
                         en.forEach((item, items) => {
                             item.classList.add("none")
                         });
-                        birger = document.querySelectorAll(".header__container-js:not(.none)");
-                        burger(button, birger, activeIndex);
+                        activeLanguage = 'ua';
 
                     } else if ((containerIndex === 1) && (itemIndex !== activeIndex) && (itemIndex === 2)) {
                         console.log("ru")
                         itemClose[activeIndex].classList.remove("navigation__list-item-first");
+                        langButDes[activeIndex].classList.remove("activeLang");
                         activeIndex = 2;
                         itemClose[activeIndex].classList.add("navigation__list-item-first");
+                        langButDes[activeIndex].classList.add("activeLang");
                         container.classList.remove("open");
                         itemClose.forEach((itemLang, items) => {
                             itemLang.style.display = "none";
@@ -477,105 +700,49 @@
                         en.forEach((item, items) => {
                             item.classList.add("none")
                         });
-                        birger = document.querySelectorAll(".header__container-js:not(.none)");
-                        burger(button, birger, activeIndex);
+                        activeLanguage = 'ru';
                     }
+
+
 
                 })
             });
         };
 
-
-        function burger(buttons, items, active) {
-            let activeIndex = active;
-            let buttonIndex = 0
-            buttons[buttonIndex].classList.add("active");
-            items[buttonIndex].classList.add("active");
-            buttons.forEach((button, buttonIndex) =>
-                button.addEventListener("click", () => {
-                    if (buttonIndex === 0) {
-                        buttons[buttonIndex].classList.remove("active");
-                        items[0].classList.remove("active");
-                        items[1].classList.add("active");
-                        if (activeIndex === 0) {
-                            buttons[1].classList.add("active");
-                            buttonIndex = 1;
-                        } else if (activeIndex === 1) {
-                            buttons[3].classList.add("active");
-                            buttonIndex = 3;
-                        } else if (activeIndex === 2) {
-                            buttons[2].classList.add("active");
-                            buttonIndex = 2;
-                        }
-                        document.body.style.overflow = "hidden"
-
-                    } else if (buttonIndex === 1) {
-                        items[1].classList.remove("active");
-                        buttons[1].classList.remove("active");
-                        if (activeIndex === 0) {
-                            buttons[1].classList.remove("active");
-                        } else if (activeIndex === 1) {
-                            buttons[3].classList.remove("active");
-                        } else if (activeIndex === 2) {
-                            buttons[2].classList.remove("active");
-                        }
-                        buttonIndex = 0;
-                        buttons[0].classList.add("active");
-                        items[0].classList.add("active");
-                        document.body.style.overflow = "visible"
-                    }
-                    else if (buttonIndex === 2) {
-                        items[1].classList.remove("active");
-                        buttons[2].classList.remove("active");
-                        if (activeIndex === 0) {
-                            buttons[1].classList.remove("active");
-                        } else if (activeIndex === 1) {
-                            buttons[3].classList.remove("active");
-                        } else if (activeIndex === 2) {
-                            buttons[2].classList.remove("active");
-                        }
-                        buttonIndex = 0;
-                        buttons[0].classList.add("active");
-                        items[0].classList.add("active");
-                        document.body.style.overflow = "visible"
-                    }
-                    else if (buttonIndex === 3) {
-                        items[1].classList.remove("active");
-                        buttons[3].classList.remove("active");
-                        if (activeIndex === 0) {
-                            buttons[1].classList.remove("active");
-                        } else if (activeIndex === 1) {
-                            buttons[3].classList.remove("active");
-                        } else if (activeIndex === 2) {
-                            buttons[2].classList.remove("active");
-                        }
-                        buttonIndex = 0;
-                        buttons[0].classList.add("active");
-                        items[0].classList.add("active");
-                        document.body.style.overflow = "visible"
-                    };
-                    console.log(buttonIndex)
-                    buttonIndex = 0;
-                    buttons[0].classList.add("active");
-                    items[0].classList.add("active");
-                    
-                    // menu(activeIndex, listItem, button);
-                    function menu(Index, links) {
-                        links.forEach((link, buttonIndex) =>
-                            link.addEventListener("click", () => {
-                                document.body.style.overflow = "visible";
-                                birgerContainer[Index].classList.remove("active");
-                                birgerContainer[0].classList.add("active");
-                                buttons[0].classList.add("active");
-                            })
-                        );
-                    };
-                })
-            );
-            
+        function burger(activeLanguage) {
+            burgerContainer.forEach((container) => {
+                if (Object.values(container.classList).includes(activeLanguage)) {
+                    container.classList.add('active')
+                    document.body.style.overflow = "hidden";
+                    closeBurgerButton.forEach((item) => {
+                        item.addEventListener("click", () => {
+                            container.classList.remove('active')
+                            document.body.style.overflow = "visible";
+                        })
+                    })
+                }
+            })
         };
 
-        languages(langClosed, langCont, ru, en, ua, burgerButton, birgerContainer);
+        function menu(links, button, birgerContainer, activeLanguage) {
+            links.forEach((link, links) =>
+                link.addEventListener("click", () => {
+                    birgerContainer.forEach((container, index) => {
+                        container.classList.remove("active")
+                        console.log(birgerContainer)
+                    })
+                    birgerContainer[0].classList.remove("active");
+                    document.body.style.overflow = "visible";
+                    birgerContainer[0].classList.remove("active");
+                    // button.classList.add("active");
+                })
+            );
+        };
+
+        languages(langClosed, langCont, ru, en, ua, langButton);
+        menu(listItem, burgerButton, burgerContainer, activeLanguage);
+        burgerButton.classList.add("active");
+        burgerButton.addEventListener("click", () => burger(activeLanguage));
 
     </script>
 </body>

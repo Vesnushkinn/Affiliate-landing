@@ -230,6 +230,7 @@ a {
     color: #000000;
     margin: 0px;
     line-height: 1.625rem;
+    min-width: 17rem;
 }
 
 .sextion__text-main {
@@ -436,7 +437,7 @@ a {
 
 .photo__zews {
     height: 44.625rem;
-    margin-left: -8.75rem;
+    margin-left: -13.75rem;
     display: block;
 }
 
@@ -445,7 +446,7 @@ a {
 }
 
 .button__body {
-    max-width: 36.2vw;
+    /* max-width: 36.2vw; */
     font-size: 2rem;
     line-height: 2.4375rem;
     padding: 1.3125rem 9vw 1.3125rem 9vw;
@@ -716,8 +717,8 @@ details[open] summary~* {
 
 .header__logo {
     color: white;
-    height: 20%;
-    margin: auto;
+    /* height: 20%; */
+    margin-right: auto;
     font-family: "Casper";
     font-style: normal;
     font-weight: 400;
@@ -733,6 +734,10 @@ details[open] summary~* {
 
 .menu__button {
     display: none;
+}
+
+.menu__button.cross {
+    display: block;
 }
 
 .user-box {
@@ -986,6 +991,10 @@ input:checked + * + input + * ~ input:after,{
 
 .header__menu-lang {
     display: none;
+}
+
+.activeLang {
+    text-decoration: underline;
 }
 
 .none {
@@ -1398,6 +1407,7 @@ input:checked + * + input + * ~ input:after,{
 
     .header {
         padding: 0px;
+        align-items: start;
     }
 
 
