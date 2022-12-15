@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Casper";
-    src: url("Casper/Casper.ttf");
+    src: url("Casper/Casper.woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,7 +36,7 @@ a {
 }
 
 .login {
-    font-family: 'Russo One';
+    font-family: "Russo One";
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
@@ -121,9 +121,8 @@ a {
     display: flex;
     column-gap: 10.75rem;
     max-width: 75rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     row-gap: 2.1429rem;
-
 }
 
 .contant__image {
@@ -193,6 +192,11 @@ a {
     margin-bottom: 0.3125rem;
 }
 
+.subtittle__main-adkey {
+    letter-spacing: 0.04em;
+    margin-bottom: 3.125rem;
+}
+
 .subtittle {
     font-size: 2rem;
     letter-spacing: -0.01em;
@@ -211,7 +215,7 @@ a {
 }
 
 .tittle-1 {
-    margin: 0 0 0.9375rem 0;
+    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 6rem;
@@ -258,17 +262,17 @@ a {
 
 .button:hover {
     transition: 0.2s ease-in-out;
-    background: linear-gradient(180deg, #9060F5 8.85%, rgba(88, 27, 215, 0) 85.94%);
+    background: linear-gradient(180deg, #9060f5 8.85%, rgba(88, 27, 215, 0) 85.94%);
 }
 
 .button:active {
     transition: 0.2s ease-in-out;
-    background: #9060F5;
+    background: #9060f5;
 }
 
 .button__main {
     width: 53vw;
-    margin: 8.4375rem auto 0 auto;
+    margin: 3.438rem auto 0 auto;
 }
 
 .section__button {
@@ -316,7 +320,6 @@ a {
 .section__content-right {
     padding-right: 0px;
 } */
-
 
 /* .section__content-contacts {
     justify-content: start;
@@ -436,10 +439,23 @@ a {
 }
 
 .photo__zews {
-    height: 44.625rem;
-    margin-left: -13.75rem;
+    height: 42.375rem;
     display: block;
+    margin-left: -7rem;
 }
+
+.container__item-zews {
+    position: relative;
+}
+
+/* .container__item-zews::before {
+    content: url(img/Ellipse.png);
+    position: absolute;
+    top: -120%;
+    transform: scale(0.27);
+    left: -152%;
+    z-index: -1;
+} */
 
 .tittle-2-s {
     font-size: 3.875rem;
@@ -459,7 +475,6 @@ a {
 
 .button__body-ru {
     padding: 1.3125rem 2vw 1.3125rem 2vw;
-
 }
 
 .section__content-zews {
@@ -627,7 +642,6 @@ a {
     padding-bottom: 0px;
 }
 
-
 details {
     display: block;
     width: 100%;
@@ -673,15 +687,15 @@ summary:before {
     transition: transform 0.5s;
 }
 
-details[open]>summary:before {
+details[open] > summary:before {
     transform: rotate(45deg);
 }
 
-summary~* {
+summary ~ * {
     padding: 0 1em 10px 1.4em;
 }
 
-details[open] summary~* {
+details[open] summary ~ * {
     animation: sweep 0.5s ease-in-out;
 }
 
@@ -789,7 +803,7 @@ input[type="checkbox"i] {
     margin: 0px;
 }
 
-input:focus~label {
+input:focus ~ label {
     top: -20px;
     left: 0;
     opacity: 1;
@@ -902,7 +916,7 @@ input:checked {
     opacity: 1;
 }
 
-input+* {
+input + * {
     position: absolute;
     display: block;
     top: 2.5rem;
@@ -927,7 +941,7 @@ section {
     /* justify-content: center; */
 }
 
-input:checked+* {
+input:checked + * {
     transform: translateX(0);
     z-index: 1;
 }
@@ -940,7 +954,7 @@ input:checked+* {
 	just to be safe we hide every element that comes after
 	each slide and that's not an input of type radio
 */
-input+*+*:not(input[type="radio"]) {
+input + * + *:not(input[type="radio"]) {
     display: none;
 }
 
@@ -980,11 +994,11 @@ input:checked:after {
     display: none;
 }
 
-input:checked+*+input:before {
+input:checked + * + input:before {
     left: calc(100% - 3rem);
 }
 
-input:checked+*+input:after {
+input:checked + * + input:after {
     left: calc(100% - 2rem);
     transform: translate(-75%, -50%) rotate(-135deg);
 }
@@ -1007,7 +1021,7 @@ input:checked + * + input + * ~ input:after,{
 }
 
 .activeLang {
-   border-bottom: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .body__section-main-privacy {
@@ -1035,18 +1049,38 @@ b {
     font-weight: 800;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1490px) {
+    .contact__tittle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    .contacts {
+        font-size: 14px;
+        column-gap: 3.75rem;
+    }
+
+    .contact__tittle {
+        font-size: 1.5rem;
+    }
     html {
         font-size: 11px;
     }
+}
 
-    .photo__zews {
+@media screen and (max-width: 1080px) {
+    .contacts {
+        flex-wrap: wrap;
+    }
+
+    .photo__zews,
+    .container__item-zews::before {
         display: none;
     }
 }
 
 @media screen and (max-width: 700px) {
-
     .login {
         display: none;
     }
@@ -1094,7 +1128,6 @@ b {
         row-gap: 0.286rem;
     }
 
-
     .menu__button {
         width: 5vw;
         display: none;
@@ -1108,7 +1141,6 @@ b {
         height: auto;
         justify-self: end;
     }
-  
 
     .ccross {
         width: 1.929rem;
@@ -1149,7 +1181,6 @@ b {
     .none {
         display: none;
     }
-
 
     .menu__navigation-burger {
         display: grid;
@@ -1192,7 +1223,7 @@ b {
 
     .menu__humburger {
         background-image: url(img/BG\ gradient.png);
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -1327,7 +1358,7 @@ b {
         font-size: 5vw;
     }
 
-    summary~* {
+    summary ~ * {
         padding: 4vw 1em 10px 1.4em;
     }
 
@@ -1421,8 +1452,6 @@ b {
         row-gap: 0.5714rem;
     }
 
-
-
     .footer__menu {
         padding: 1rem 0px 0px 0px;
         row-gap: 2rem;
@@ -1444,8 +1473,6 @@ b {
         align-items: start;
     }
 
-
-
     .logo__image {
         width: 6.5rem;
         height: auto;
@@ -1456,22 +1483,21 @@ b {
         margin-bottom: 2.5rem;
         margin-left: 0px;
         margin-right: 0px;
-
     }
 
     .tittle-1 {
-        font-family: 'Russo One';
+        font-family: "Russo One";
         font-style: normal;
         font-weight: 400;
         font-size: 2.2857rem;
         line-height: 2.7857rem;
         letter-spacing: 0.04em;
-        margin-bottom: 1.0714rem;
+        margin-bottom: 0.214rem;
     }
 
     .subtittle__main {
         margin-bottom: 0.3571rem;
-        font-family: 'Russo One';
+        font-family: "Russo One";
         font-style: normal;
         font-weight: 400;
         font-size: 1.7143rem;
@@ -1479,8 +1505,13 @@ b {
         letter-spacing: -0.01em;
     }
 
+    .subtittle__main-adkey {
+        letter-spacing: 0.04em;
+        margin-bottom: 1.714rem;
+    }
+
     .subtittle {
-        font-family: 'Russo One';
+        font-family: "Russo One";
         font-style: normal;
         font-weight: 400;
         font-size: 1.4286rem;
@@ -1490,9 +1521,10 @@ b {
         max-width: 12.1429rem;
     }
 
-    .button__main, .button__body {
-        margin-top: 12.8571rem;
-        background: #B28DFF;
+    .button__main,
+    .button__body {
+        margin-top: 9.786rem;
+        background: #b28dff;
         border: 0.2143rem solid #000000;
         border-radius: 0.7143rem;
         font-size: 1.4286rem;
@@ -1502,8 +1534,7 @@ b {
     }
 
     .button__body-ru {
-       font-size: 1.286rem;
-    
+        font-size: 1.286rem;
     }
 
     .important__item-bordertop {
@@ -1607,7 +1638,8 @@ b {
         margin-top: 3.4286rem;
     }
 
-    .tittle-3-meet, .text__meet {
+    .tittle-3-meet,
+    .text__meet {
         font-size: 1.1429rem;
         line-height: 1.3571rem;
         letter-spacing: -0.01em;
@@ -1659,7 +1691,7 @@ b {
     }
 
     .create {
-        font-family: 'Casper';
+        font-family: "Casper";
         font-style: normal;
         font-weight: 400;
         font-size: 1rem;
@@ -1683,12 +1715,16 @@ b {
     .tittle-2-privacy {
         font-size: 1.714rem;
     }
-   
 }
 
 @media only screen and (max-width: 500px) {
-
-    .header, .section__tittle-main, .wrapper, .contacts, .container__item-phones, .section__container-meet, .photo__conference {
+    .header,
+    .section__tittle-main,
+    .wrapper,
+    .contacts,
+    .container__item-phones,
+    .section__container-meet,
+    .photo__conference {
         width: 100%;
     }
 
@@ -1704,7 +1740,7 @@ b {
         display: block;
         position: absolute;
         width: 100%;
-        top: 2.8125rem;
+        top: 4rem;
         z-index: -1;
     }
 
@@ -1712,7 +1748,9 @@ b {
         margin-bottom: 7.1429rem;
     }
 
-    .contacts, .footer__menu, .container__item-phones {
+    .contacts,
+    .footer__menu,
+    .container__item-phones {
         flex-wrap: wrap;
     }
 
@@ -1801,12 +1839,10 @@ b {
     .section__text-m-privacy {
         max-width: 20.429rem;
     }
-    
 }
 
 @media only screen and (max-width: 385px) {
     .menu__humburger {
         background-size: contain;
     }
-
 }
